@@ -1,0 +1,15 @@
+# Launch a shell from an alpine container, and make sure that you can interact
+# directly with the container via your terminal, and that the container deletes itself
+# once the shell’s execution is done.
+
+
+# Alpine Linux is a Linux distribution built around musl libc and BusyBox.
+
+# /bin/ash is Ash (Almquist Shell) provided by BusyBox
+# --rm Automatically remove the container when it exits (docker run --help)
+# -i Interactive mode (Keep STDIN open even if not attached)
+# -t Allocate a pseudo-TTY
+
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+docker run -it --rm alpine /bin/ash

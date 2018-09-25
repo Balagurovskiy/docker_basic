@@ -1,0 +1,5 @@
+# List all the Docker volumes.
+
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+docker volume ls

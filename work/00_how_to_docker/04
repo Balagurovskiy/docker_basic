@@ -1,0 +1,8 @@
+#  Get the hello-world container from the Docker Hub, where it’s available.
+
+# List the hello-world image that was downloaded to your machine:
+# docker image ls
+
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+docker pull hello-world

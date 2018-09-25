@@ -1,0 +1,8 @@
+#  Force quit and delete all the containers (whatever their status), in one command.
+
+# -a, --all             Show all containers (default shows just running)
+# -q, --quiet           Only display numeric IDs
+
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+docker rm -f $(docker ps -aq)

@@ -1,0 +1,6 @@
+#  List the hello-world container (spawned by the image) which exits after displaying its message.
+#   docker container ls -all
+
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+docker run hello-world

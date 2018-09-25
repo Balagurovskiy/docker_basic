@@ -1,0 +1,13 @@
+
+# Create a local swarm, the Char virtual machine should be its manager.
+
+# eval $(docker-machine env Char)
+
+# Run the following command to create a new swarm:
+# 	docker swarm init --advertise-addr <MANAGER-IP>	192.168.99.100
+
+#  docker info | grep 'Swarm'
+
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+docker swarm init --advertise-addr $(docker-machine ip Char)

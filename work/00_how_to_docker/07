@@ -1,0 +1,7 @@
+#  Get the internal IP address of the overlord container
+
+#  docker inspect --format '{{ .NetworkSettings.IPAddress }}' overlord
+
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' overlord

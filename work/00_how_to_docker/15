@@ -1,0 +1,16 @@
+# Launch a phpmyadmin container as a background task. It should be named roach-warden,
+# its 80 port should be bound to the 8081 port of the virtual machine and it should
+# be able to explore the database stored in the spawning-pool container.
+
+# You can add your own custom config.inc.php settings (such as Configuration Storage setup)
+# by creating a file named "config.user.inc.php" with the various user defined settings
+# in it, and then linking it into the container using:
+# docker run --name myadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php phpmyadmin/phpmyadmin
+
+# -d 	Run container in background and print container ID
+# -p 	Publish a container's port(s) to the host
+# --link 	Add link to another container
+
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+docker run -d --name roach-warden -p 8081:80 --link spawning-pool:db phpmyadmin/phpmyadmin

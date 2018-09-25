@@ -1,0 +1,7 @@
+# Display all the currently active containers
+
+# docker container ls
+
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+docker ps
