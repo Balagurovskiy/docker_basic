@@ -16,7 +16,7 @@ public class JavaSample {
 	private static void printDate() {
 		System.out.println("\n");
 		java.util.Date date = new java.util.Date();
-		 System.out.println("\t" + date);
+		System.out.println("\t" + date);
 		System.out.println("\n");
 	}
     
