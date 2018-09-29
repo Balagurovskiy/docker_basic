@@ -1,17 +1,13 @@
-/*var express = require('express');
-var app = express();
+//Load express module with `require` directive
+var express = require('express')
+var app = express()
+
+//Define request response in root URL (/)
 app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});*/
+  res.send('Hello World!')
+})
 
-
-var http = require('http');// import http module
-
-http.createServer(function (req, res) {// request and response auto paste by node.js
-    res.writeHead(200, {'Content-Type': 'text/plain'});// set respose // ContType js object
-    res.write('Hello World!');
-    res.end();
-}).listen(3030); // liste on port
+//Launch listening server on port 3030
+app.listen(3030, function () {
+  console.log('app listening on port 3030!')
+})
